@@ -1,7 +1,4 @@
 
-cd ~/CivicLoop
-
-cat > db.php <<'EOF'
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
