@@ -1,0 +1,9 @@
+
+.git
+.DS_Store
+.env
+.venv
+vendor
+node_modules
+*.log
+civicloop_before_duplicates.sql

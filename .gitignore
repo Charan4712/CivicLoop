@@ -1,0 +1,52 @@
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+db_before_deployment.php
+
+# Database backups
+*.sql
+*.sql.gz
+
+# macOS
+.DS_Store
+
+# Local dependencies and logs
+.venv/
+vendor/
+node_modules/
+*.log
+
+# Local backup copies
+index2.php
+index_backup.php
+index_before_duplicate_count.php
+index_before_duplicate_filter.php
+report_before_confirmation.php
+report_before_duplicates.php
+report_before_similarity.php
+
+cd ~/CivicLoop
+
+cat > .gitignore <<'EOF'
+.env
+.env.*
+!.env.example
+.DS_Store
+*.sql
+*.sql.gz
+*.log
+.venv/
+vendor/
+node_modules/
+db_before_deployment.php
+index2.php
+index_backup.php
+index_before_duplicate_count.php
+index_before_duplicate_filter.php
+report_before_confirmation.php
+report_before_duplicates.php
+report_before_similarity.php
+EOF
+
