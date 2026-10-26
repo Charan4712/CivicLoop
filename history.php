@@ -57,11 +57,7 @@ function e($value) {
             margin-right: 18px;
         }
 
-        main {
-            max-width: 1100px;
-            margin: 35px auto;
-            padding: 0 20px;
-        }
+        main { width: 100%; max-width: none; margin: 0; padding: 0; }
 
         .card {
             background: white;

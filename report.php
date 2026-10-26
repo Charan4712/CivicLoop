@@ -267,11 +267,7 @@ function e($value) {
         }
         header h1 { margin: 0; }
         header a { color: #c6d5e5; text-decoration: none; }
-        main {
-            max-width: 720px;
-            margin: 35px auto;
-            padding: 0 20px;
-        }
+        main { width: 100%; max-width: none; margin: 0; padding: 0; }
         form {
             background: white;
             padding: 28px;

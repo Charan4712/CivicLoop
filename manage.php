@@ -128,7 +128,7 @@ header {
 }
 header h1 { margin: 0 0 8px; }
 header a { color: #c6d5e5; text-decoration: none; }
-main { max-width: 950px; margin: 35px auto; padding: 0 20px; }
+main { width: 100%; max-width: none; margin: 0; padding: 0; }
 .card {
     background: white;
     padding: 22px;

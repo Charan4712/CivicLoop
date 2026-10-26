@@ -232,11 +232,7 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.12);
 }
 
-main {
-    max-width: 1180px;
-    margin: 38px auto;
-    padding: 0 24px;
-}
+main { width: 100%; max-width: none; margin: 0; padding: 0; }
 
 .stats {
     display: flex;

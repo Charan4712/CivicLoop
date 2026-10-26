@@ -601,3 +601,25 @@ footer {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* CivicLoop page width override */
+html, body {
+  width: 100%;
+  min-width: 0;
+}
+
+body > main {
+  display: block;
+  width: calc(100% - 48px);
+  max-width: 1240px;
+  margin: 32px auto 56px;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  body > main {
+    width: calc(100% - 32px);
+    margin: 24px auto 40px;
+  }
+}
