@@ -39,8 +39,5 @@ try {
     $conn->set_charset('utf8mb4');
 } catch (Throwable $e) {
     error_log('Database connection failed: ' . $e->getMessage());
-    http_response_code(500);
     exit('Database connection failed. Check deployment configuration.');
 }
-?>
-EOF
