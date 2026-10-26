@@ -139,6 +139,9 @@ while ($row = $statusResult->fetch_assoc()) {
     }
 }
 
+// Count original issues only for analytics; duplicate reports are excluded.
+$analyticsTotal = array_sum($statuses);
+
 // Category analytics
 $categoryResult = $conn->query(
     "SELECT c.category_name, COUNT(i.issue_id) AS total
@@ -506,13 +509,13 @@ main {
                 Current progress of all reported issues.
             </p>
 
-            <?php if ($totalCount === 0): ?>
+            <?php if ($analyticsTotal === 0): ?>
                 <p class="empty-chart">No issues available to analyse yet.</p>
             <?php else: ?>
 
                 <?php foreach ($statuses as $status => $count): ?>
                     <?php
-                    $percent = chartPercent($count, $totalCount);
+                    $percent = chartPercent($count, $analyticsTotal);
 
                     $barClass = match ($status) {
                         "Reported" => "status-reported",
@@ -550,14 +553,14 @@ main {
                 See which types of problems are reported most often.
             </p>
 
-            <?php if ($totalCount === 0): ?>
+            <?php if ($analyticsTotal === 0): ?>
                 <p class="empty-chart">No issues available to analyse yet.</p>
             <?php else: ?>
 
                 <?php foreach ($categories as $category): ?>
                     <?php
                     $count = $category["total"];
-                    $percent = chartPercent($count, $totalCount);
+                    $percent = chartPercent($count, $analyticsTotal);
                     ?>
 
                     <div class="bar-row">
