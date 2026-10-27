@@ -208,3 +208,28 @@ The history page shows previous and new statuses, notes, and timestamps for issu
 - CSS3
 - Git and GitHub
 - Render
+## 📸 Project Screenshots
+
+### 1. Dashboard
+Displays total issues, open and resolved issues, status analytics, category analytics, and search filters.
+
+![CivicLoop Dashboard](screenshots/dashboard.png)
+
+### 2. Report an Issue
+Allows users to submit civic problems with a title, description, category, area, reporter name, and priority.
+
+![Report an Issue](screenshots/report-issue.png)
+
+### 3. Manage Issues
+Displays reported issues and provides controls to update their statuses.
+
+![Manage Community Issues](screenshots/manage-issues.png)
+
+### 4. Issue Status History
+Displays previous and new statuses, notes, and timestamps for issue updates.
+
+![Issue Status History](screenshots/issue-history.png)
+
+## 🌐 Live Demo
+
+**Live Website:** https://civicloop-885q.onrender.com
