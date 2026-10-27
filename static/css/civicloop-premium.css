@@ -1056,19 +1056,76 @@ body>header {
     min-width: 0 !important;
   }
 }
+
 /* Final mobile sizing */
 @media (max-width: 600px) {
-  body > header nav a {
+  body>header nav a {
     font-size: 14px !important;
     min-height: 46px !important;
     padding: 10px 8px !important;
   }
 
-  .stats > .stat:last-child {
+  .stats>.stat:last-child {
     grid-column: 1 / -1 !important;
   }
 
   .stat strong {
     font-size: 28px !important;
+  }
+}
+
+/* CivicLoop: Report form Dark Premium fix */
+body:has(form) form {
+  background: #111d30 !important;
+  color: #e8eefb !important;
+  border: 1px solid #263852 !important;
+  border-radius: 14px !important;
+  padding: 24px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+body:has(form) form label {
+  color: #cbd7ec !important;
+}
+
+body:has(form) form input,
+body:has(form) form textarea,
+body:has(form) form select {
+  background: #0b1526 !important;
+  color: #e8eefb !important;
+  border: 1px solid #30435f !important;
+  border-radius: 8px !important;
+}
+
+body:has(form) form input::placeholder,
+body:has(form) form textarea::placeholder {
+  color: #8495b0 !important;
+  opacity: 1;
+}
+
+body:has(form) form input:focus,
+body:has(form) form textarea:focus,
+body:has(form) form select:focus {
+  outline: none;
+  border-color: #6385ff !important;
+  box-shadow: 0 0 0 3px rgba(99, 133, 255, 0.18);
+}
+
+body:has(form) form option {
+  background: #0b1526;
+  color: #e8eefb;
+}
+
+body:has(form) form button,
+body:has(form) form input[type="submit"] {
+  background: #6385ff !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+@media (max-width: 600px) {
+  body:has(form) form {
+    padding: 16px !important;
   }
 }
