@@ -842,3 +842,30 @@ body > main {
     grid-template-columns: 1fr;
   }
 }
+
+/* FINAL LAYOUT OVERRIDE */
+body > main {
+  width: calc(100% - 48px) !important;
+  max-width: none !important;
+  margin: 36px 24px 64px !important;
+  padding: 0 !important;
+}
+
+body > header {
+  width: 100% !important;
+  max-width: none !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+@media (max-width: 760px) {
+  body > main {
+    width: calc(100% - 32px) !important;
+    margin: 24px 16px 40px !important;
+  }
+
+  body > header {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
