@@ -782,3 +782,63 @@ body > main {
     grid-template-columns: 1fr;
   }
 }
+
+/* CivicLoop full-screen layout */
+html,
+body {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+body > header {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 28px 32px;
+}
+
+body > header h1,
+body > header p,
+body > header nav {
+  margin-left: 0;
+}
+
+body > main {
+  width: calc(100% - 64px);
+  max-width: none;
+  margin: 36px 32px 64px;
+  padding: 0;
+}
+
+.stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.analytics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.filter-form {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  body > header {
+    padding: 22px 18px;
+  }
+
+  body > main {
+    width: calc(100% - 36px);
+    margin: 26px 18px 42px;
+  }
+
+  .stats,
+  .analytics {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-form {
+    grid-template-columns: 1fr;
+  }
+}
