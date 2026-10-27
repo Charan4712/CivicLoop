@@ -174,3 +174,37 @@ No license has been specified yet. Add a license if you intend to distribute or 
 ---
 
 **CivicLoop — Report It. Track It. Resolve It.**
+## 📸 Project Screenshots
+
+### 1. Dashboard
+The dashboard displays total, open, and resolved issues, along with issue status analytics, category analytics, and search and filter controls.
+
+![CivicLoop Dashboard](screenshots/dashboard.png)
+
+### 2. Report an Issue
+Users can report community problems by entering the issue title, description, category, area, name, and priority.
+
+![Report an Issue](screenshots/report-issue.png)
+
+### 3. Manage Issues
+The management page displays reported issues and allows the status of an issue to be updated.
+
+![Manage Community Issues](screenshots/manage-issues.png)
+
+### 4. Issue Status History
+The history page shows previous and new statuses, notes, and timestamps for issue updates.
+
+![Issue Status History](screenshots/issue-history.png)
+
+## 🌐 Live Demo
+
+**Live Website:** https://civicloop-885q.onrender.com
+
+## 🛠️ Technology Stack
+
+- PHP
+- MySQL
+- HTML5
+- CSS3
+- Git and GitHub
+- Render
