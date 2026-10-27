@@ -869,3 +869,89 @@ body > header {
     padding-right: 16px !important;
   }
 }
+
+/* CivicLoop Dark Premium — repair search and filter controls */
+.filter-form {
+  display: grid !important;
+  grid-template-columns:
+    minmax(220px, 2fr)
+    repeat(4, minmax(130px, 1fr))
+    auto auto !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  padding: 22px !important;
+  background: #121d2e !important;
+  border: 1px solid #30415b !important;
+  border-radius: 16px !important;
+}
+
+.filter-form input:not([type=checkbox]):not([type=radio]),
+.filter-form select {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  padding: 0 13px !important;
+  background-color: #0b1423 !important;
+  color: #edf3ff !important;
+  border: 1px solid #40516b !important;
+  border-radius: 9px !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  opacity: 1 !important;
+}
+
+.filter-form select {
+  color-scheme: dark !important;
+  appearance: auto;
+}
+
+.filter-form select option {
+  background-color: #121d2e !important;
+  color: #edf3ff !important;
+}
+
+.filter-form input::placeholder {
+  color: #91a1b9 !important;
+  opacity: 1 !important;
+}
+
+.filter-form input:focus,
+.filter-form select:focus {
+  outline: none !important;
+  border-color: #6287ff !important;
+  box-shadow: 0 0 0 3px rgba(98, 135, 255, .18) !important;
+}
+
+.filter-form button,
+.filter-form input[type=submit],
+.filter-form .reset-button {
+  width: auto !important;
+  min-width: 92px !important;
+  min-height: 48px !important;
+  margin: 0 !important;
+  padding: 0 17px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 1150px) {
+  .filter-form {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .filter-form input,
+  .filter-form select,
+  .filter-form button,
+  .filter-form .reset-button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .filter-form {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 15px !important;
+  }
+}
