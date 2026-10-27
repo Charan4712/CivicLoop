@@ -310,7 +310,7 @@ function e($value) {
     </style>
 
 
-    <link rel="stylesheet" href="static/css/civicloop-premium.css?v=20261027-filterfix">
+    <link rel="stylesheet" href="static/css/civicloop-premium.css?v=20261027-mobilefix">
 </head>
 <body>
 <header>
