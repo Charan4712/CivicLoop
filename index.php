@@ -457,7 +457,7 @@ main { width: 100%; max-width: none; margin: 0; padding: 0; }
 </style>
 
 
-    <link rel="stylesheet" href="static/css/civicloop-premium.css">
+    <link rel="stylesheet" href="static/css/civicloop-premium.css?v=20261027-dark">
 </head>
 
 <body>
