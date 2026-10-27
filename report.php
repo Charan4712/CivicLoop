@@ -330,12 +330,12 @@ function e($value) {
 
 
 <?php if ($showDuplicateWarning && !empty($possibleDuplicates)): ?>
-    <div class="message" style="background:#fff7ed; color:#9a3412;">
+    <div class="message duplicate-warning">
         <h3>Possible Duplicate Issue Found</h3>
         <p>Similar issues already exist in this category and area.</p>
 
         <?php foreach ($possibleDuplicates as $duplicate): ?>
-            <div style="background:white; padding:12px; margin:12px 0; border-radius:8px;">
+            <div class="duplicate-issue-card">
                 <strong><?= e($duplicate["title"]) ?></strong>
                 
 <p>

@@ -1129,3 +1129,148 @@ body:has(form) form input[type="submit"] {
     padding: 16px !important;
   }
 }
+
+/* CivicLoop: Dark Premium duplicate warning fix */
+
+/* Duplicate detection warning panel */
+.duplicate-warning,
+.duplicate-alert,
+.duplicate-notice,
+.duplicate-results {
+  background: #111d30 !important;
+  color: #e8eefb !important;
+  border: 1px solid #30435f !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+
+/* Warning title and description */
+.duplicate-warning h2,
+.duplicate-warning h3,
+.duplicate-alert h2,
+.duplicate-alert h3,
+.duplicate-notice h2,
+.duplicate-notice h3,
+.duplicate-results h2,
+.duplicate-results h3 {
+  color: #e8eefb !important;
+}
+
+.duplicate-warning p,
+.duplicate-alert p,
+.duplicate-notice p,
+.duplicate-results p {
+  color: #aebed6 !important;
+}
+
+/* Existing matching issue cards */
+.duplicate-warning>div,
+.duplicate-alert>div,
+.duplicate-notice>div,
+.duplicate-results>div {
+  border-radius: 10px;
+}
+
+/* Remove oversized dark wrappers around duplicate actions */
+.duplicate-warning form,
+.duplicate-alert form,
+.duplicate-notice form,
+.duplicate-results form {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 8px 0 !important;
+}
+
+/* Keep action buttons clear and consistent */
+.duplicate-warning button,
+.duplicate-alert button,
+.duplicate-notice button,
+.duplicate-results button,
+.duplicate-warning input[type="submit"],
+.duplicate-alert input[type="submit"],
+.duplicate-notice input[type="submit"],
+.duplicate-results input[type="submit"] {
+  background: #6385ff !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+
+  .duplicate-warning,
+  .duplicate-alert,
+  .duplicate-notice,
+  .duplicate-results {
+    padding: 16px !important;
+  }
+}
+
+/* CivicLoop: Duplicate warning panel */
+.duplicate-warning {
+  background: #111d30 !important;
+  color: #e8eefb !important;
+  border: 1px solid #30435f !important;
+  border-radius: 14px !important;
+  padding: 20px !important;
+  box-shadow: none !important;
+}
+
+.duplicate-warning h3 {
+  color: #e8eefb !important;
+  margin-top: 0;
+}
+
+.duplicate-warning>p {
+  color: #aebed6 !important;
+}
+
+.duplicate-issue-card {
+  background: #17263d !important;
+  color: #e8eefb !important;
+  border: 1px solid #30435f !important;
+  padding: 16px !important;
+  margin: 12px 0 !important;
+  border-radius: 10px !important;
+}
+
+.duplicate-issue-card strong {
+  color: #f1f5ff !important;
+}
+
+.duplicate-issue-card p {
+  color: #aebed6 !important;
+}
+
+/* Keep duplicate-action forms compact */
+.duplicate-warning form {
+  background: transparent !important;
+  color: #e8eefb !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 12px 0 0 !important;
+}
+
+.duplicate-warning button {
+  width: 100%;
+  background: #6385ff !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 600px) {
+  .duplicate-warning {
+    padding: 14px !important;
+  }
+
+  .duplicate-issue-card {
+    padding: 12px !important;
+  }
+}
