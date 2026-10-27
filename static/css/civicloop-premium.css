@@ -1056,3 +1056,19 @@ body>header {
     min-width: 0 !important;
   }
 }
+/* Final mobile sizing */
+@media (max-width: 600px) {
+  body > header nav a {
+    font-size: 14px !important;
+    min-height: 46px !important;
+    padding: 10px 8px !important;
+  }
+
+  .stats > .stat:last-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  .stat strong {
+    font-size: 28px !important;
+  }
+}
